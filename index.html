@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="bg-dark" style="padding: 0; margin:0; height: 100%; width: 100%;">
+         <!-- Navbar responsive au niveau du header avec un menu Burger -->
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark mt-1" style="width: 100%;">
+            <a class="navbar-brand" href="#">Carousel</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- La liste des options proposées -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <!-- Input et bouton -->
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success">Search</button>
+                </form>
+            </div>
+        </nav>
+            <!-- Le slider avec les 3 images de Paris -->
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" style="width: 100%;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+            </ol>
+            <!-- Première image  -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                     <img src="eiffel.jpg" class="d-block w-100" alt="Photo de la Tour Eiffel" style="height: 700px; width: 500px;">
+                     <div class="carousel-caption">
+                        <h5 class="text-light">Tour Eiffel</h5>
+                        <p class="text-light">7ème arrondissement</p>
+                        <button class="btn btn-primary"> Visiter </button>
+                      </div>
+                </div>
+                <!-- Deuxième image -->
+                <div class="carousel-item">
+                    <img src="louvre.jpg" class="d-block w-100" alt="Photo du musée du Louvre" style="height: 700px; width: 500px;">
+                    <div class="carousel-caption">
+                        <h5 class= "text-light" >Musée du Louvre</h5>
+                        <p class= "text-light" >1er arrondissement</p>
+                        <button class="btn btn-primary"> Visiter </button>
+                      </div>
+                </div>
+                <!-- Troisième image -->
+                <div class="carousel-item">
+                    <img src="sacre-coeur.jpg" class="d-block w-100" alt="Photo du Sacré-coeur" style="height: 700px; width: 500px;">
+                    <div class="carousel-caption">
+                        <h5 class= "text-light" >Sacré-coeur</h5>
+                        <p class= "text-light" >9ème arrondissement</p>
+                        <button class="btn btn-primary"> Visiter </button>
+                      </div>
+                </div>
+             </div>
+             <!-- Les petits flèches sur le côté pour passer d'une image à l'autre-->
+             <a class="carousel-control-prev" href="#carouselExample" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+             </a>
+             <a class="carousel-control-next" href="#carouselExample" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+             </a>
+        </div>
+                    <!-- Les différents avis avec les photos de ceux qui ont donné leur avis-->
+            <div class="row" style="width: 100%;">
+                <!-- Premier avis -->
+                <div class="col-lg-4 mt-3">
+                    <img src="manA.jpg" class= "rounded-circle"alt="Photo d'un homme"  style="width: 100px; height: 100px">
+                    <h5 class=" ms-1 mt-2 text-white"> Nick</h5>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus cupiditate vel.</p>
+                    <button class="btn btn-outline-secondary text-white"> View Details</button>
+                </div>
+                <!-- Deuxième avis -->
+                <div class="col-lg-4 mt-3">
+                    <img src="manB.jpg" class= "rounded-circle"alt="Photo d'un homme'"  style="width: 100px; height: 100px">
+                    <h5 class="ms-1 mt-2 text-white"> Louis </h5>
+                    <p class="text-white">Doloremque est molestias temporibus quidem repudiandae! Laudantium, culpa.</p>
+                    <button class="btn btn-outline-secondary text-white"> View Details</button>
+                </div>
+                <!-- Troisième avis -->
+                <div class="col-lg-4 mt-3">
+                    <img src="manC.jpg" class= "rounded-circle" alt="Photo d'un homme'" style="width: 100px; height: 100px">
+                    <h5 class="ms-1 mt-2 text-white"> Henry </h5>
+                    <p class="text-white">Ex consequuntur eius, nesciunt earum culpa quas molestias recusandae cum corporis tempora.</p>
+                    <button class="btn btn-outline-secondary text-white"> View Details</button>
+                </div>
+            </div>
+                <!-- Les différents articles de journaux -->
+            <div class="row mt-4 bg-light w-100">
+                <hr>
+                <!-- Premier article et la photo-->
+                <div class="col-md-6 mt-5 pt-5 me-2 ms-4">
+                    <h6 class="fs-3 mt-3">Praesentium, mollitia, laudantium hic ad,  eveniet, est temporibus porro sequi <br> commodi facilis at.</h6>
+                    <p class="mt-3">Aenean non justo quis erat vehicula facilisis. Aenean id nunc dictum justo molestie blandit. Cras venenatis, odio sit amet fermentum consectetur, elit tortor aliquam velit, eu finibus ex magna ut ante. Sed eget suscipit nibh, sed mattis ex. Aliquam convallis arcu id mauris laoreet, vel interdum magna lobortis.</p>
+                </div>
+                <div class="col-md-5 mt-5 pt-5 ms-3 ps-3 mb-3">
+                    <img src="newspaperA.png" style="height: 400px; width: 400px;" alt="">
+                </div>
+            </div>
+                <!-- Deuxième article et la photo -->
+            <div class="row mt-3 bg-light w-100">
+                <div class="col-md-5 mt-5 pt-5 ms-3 ps-3 mb-3">
+                    <img src="newspaperB.png" style="height: 400px; width: 400px;" alt="">
+                </div>
+                <div class="col-md-5 mt-5 pt-5 me-2 ms-4">
+                    <h6 class="fs-3 mt-3"> Cras quis lacinia eros, quis mollis nulla. Pellentesque habitant morbi tristique senectus</h6>
+                    <p class="mt-3 me-4">Duis aliquam quam eu tortor suscipit viverra. Proin nec blandit nisl. Praesent interdum velit a libero blandit mattis. Nam rutrum vestibulum dictum. Praesent vel nunc dui. Nullam elit est, fringilla sed pulvinar at, maximus nec erat. Vivamus at enim ac turpis vulputate rutrum in nec nulla. Aenean non mattis sem, in porta justo. Nullam in dignissim metus. Phasellus sit amet magna rutrum, elementum neque quis, posuere leo.</p>
+                </div>
+            </div>
+                    <!-- Troisième article et la photo -->
+            <div class="row mt-3 bg-light w-100">
+                <div class="col-md-6 mt-5 pt-5 me-2 ms-4">
+                    <h6 class="fs-3 mt-3"> Aliquam vitae odio nunc. Suspendisse vitae enim at nisi auctor faucibus. Integer sed laoreet urna, id venenatis metus.</h6>
+                    <p class="mt-3 me-4">Aenean consequat egestas justo eu porttitor. Nulla metus mi, pretium a justo sed, mattis fermentum orci. Donec accumsan placerat ligula, semper accumsan magna facilisis eget. Mauris consequat auctor est, ut accumsan dui vestibulum in. Nam congue dui massa, at tempor est porttitor id. Fusce quis erat nec arcu venenatis sollicitudin. Pellentesque blandit sapien eget aliquam finibus. Etiam a metus massa. Etiam lobortis risus eget nisl vulputate dictum. Nullam faucibus purus elementum facilisis gravida.</p>
+                </div>
+                <div class="col-md-5 mt-5 pt-5 ms-3 ps-3 mb-3">
+                    <img src="newspaperC.jpg" style="height: 400px; width: 400px;" alt="">   
+                </div>
+                <hr>
+                <!-- Le footer -->
+                <footer class="w-100 mt-3">
+                    <div class="d-flex justify-content-start text-dark py-4 ms-4 mb-3">
+                      <span>  &copy; 2020-2021 By am_abdf_ </span>
+                      <a href="#" class="ms-3" style = "text-decoration: none;"> Back to top</a>
+                    </div>
+                </footer>
+            </div>
+                
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        </body>
+        </html>
